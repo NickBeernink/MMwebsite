@@ -1,0 +1,180 @@
+﻿
+/* Main body and NavBar */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#MasterDiv {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+#lblWelcome {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: smaller;
+    font-style: oblique;
+}
+
+a {
+    color: darkgrey;
+    text-decoration: none;
+}
+
+a:hover {
+    color: orangered;
+}
+
+#welcomeBar {
+    width: 100%;
+    background-color: lightgrey;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+#banner {
+    position: relative;
+    top: 0;
+    left: 0px;
+    text-align: right;
+    width: 100%;
+}
+
+/* Navbar Dropdown */
+
+#dropDown {
+    width: 50px;
+}
+
+#dropDown li a {
+    font-size: smaller;
+}
+
+ul {
+    list-style: none;
+}
+
+    ul li {
+        display: inline-block;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    li:hover {
+        cursor: pointer;
+    }
+
+    ul li ul li {
+        clear: both;
+        width: 100%;
+        padding-top: 1rem;
+        position: relative;
+        left: 1025px;
+    }
+
+/* Headers */
+
+h4 {
+    text-decoration: underline;
+    color: lightgrey;
+}
+
+/* About Section */
+
+#aboutSection {
+    position: relative;
+    top: 200px;
+    text-align: center;
+}
+
+/* Main Insta Section */
+
+#mainInsta {
+    position: relative;
+    top: 495px;
+    text-align: center;
+}
+
+/* Photos */
+
+#mainImg {
+    position: relative;
+    top: 190px;
+    width: 100%;
+    height: 550px;
+    background-image: url("https://scontent-ort2-2.cdninstagram.com/vp/42bc2a94636db37967854903a42d75b5/5BA4E8CB/t51.2885-15/e35/26865811_1648261911916850_5050323898722156544_n.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-position-y: bottom;
+}
+
+#mainImg2 {
+    position: relative;
+    top: 450px;
+    width: 100%;
+    height: 350px;
+    background-image: url("https://scontent-ort2-2.cdninstagram.com/vp/ca36c12e0ed601ed85c3c638b9976b4b/5BC50EF4/t51.2885-15/e35/29714448_203583630419966_8818164296501428224_n.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-position-y: bottom;
+}
+
+
+/* Instagram Grid */
+
+#gridContainer {
+    width: 100%;
+    position: relative;
+    top: 620px;
+    left: -31px;
+}
+
+.gridImg {
+    height: 190px;
+    width: 265px;
+    display: inline-block;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#img1 {
+    position: relative;
+    left: 90px;
+}
+
+#img2 {
+    position: relative;
+    left: 70px;
+}
+#img3 {
+    position: relative;
+    left: 70px;
+}
+
+#img4 {
+    position: relative;
+    left: 70px;
+}
+
+#img5 {
+    position: relative;
+    left: 15px;
+}
+
+#img6 {
+    position: relative;
+    top: -195px;
+    left: 1285px;
+}

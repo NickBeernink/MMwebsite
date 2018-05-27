@@ -1,74 +1,86 @@
 ﻿<!DOCTYPE html>
 <html>
-<title>Manderson Media</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Manderson Media</title>
+    <link rel="stylesheet" type="text/css" href="MMStyles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.dropdown').hide();
+            $('#serviceTag').click(function () {
+                var dropdown = document.getElementById('dropDown');
+
+                if (dropdown.style.display === 'none') {
+                    dropdown.style.display = 'block';
+                    dropdown.style.position = 'absolute';
+                    dropdown.style.marginTop = '1rem';
+                    dropdown.style.left = '80px';
+                    dropdown.style.opacity = '1';
+                }
+                else {
+                    dropdown.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</head>
+
 <body>
-
-<!-- Header -->
-<header class="w3-display-container w3-content w3-center" style="max-width:1500px">
-  <img class="w3-image" src="/w3images/photographer.jpg" alt="Me" width="1500" height="600">
-  <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
-    <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">Manderson Media</h1>
-    <h5 class="w3-hide-large" style="white-space:nowrap">Manderson Media</h5>
-    <h3 class="w3-hide-medium w3-hide-small">TRAVEL</h3>
-  </div>
-  
-  <!-- Navbar (placed at the bottom of the header image) -->
-  <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
-    <a href="#" class="w3-bar-item w3-button">Home</a>
-    <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
-    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-  </div>
-</header>
-
-<!-- Navbar on small screens -->
-<div class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium">
-<div class="w3-bar w3-light-grey">
-  <a href="#" class="w3-bar-item w3-button">Home</a>
-  <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
-  <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-</div>
-</div>
-<!-- Page content -->
-<div class="w3-content w3-padding-large w3-margin-top" id="portfolio">
-
-  <!-- Images (Portfolio) -->
-  <img src="https://scontent-ort2-1.cdninstagram.com/t51.2885-15/e35/22858106_1168174733316596_4145126143424462848_n.jpg">
-<script async defer src="//platform.instagram.com/en_US/embeds.js"></script>" alt="Ocean" class="w3-image" width="1000" height="500">
-  <img src="/w3images/ocean2.jpg" alt="Ocean II" class="w3-image w3-margin-top" width="1000" height="500">
-  <img src="/w3images/falls2.jpg" alt="Falls" class="w3-image w3-margin-top" width="1000" height="500">
-  <img src="/w3images/mountainskies.jpg" alt="Skies" class="w3-image w3-margin-top" width="1000" height="500">
-  <img src="/w3images/mountains2.jpg" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500">
-
-  <!-- Contact -->
-  <div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="contact">
-    <h3 class="w3-center">Contact</h3>
-    <hr>
-    <p>Yo you can put a bunch of bullshit here to tell people before they contact you to give you money and shit if you'd like.</p>
-
-    <form action="/action_page.php" target="_blank">
-      <div class="w3-section">
-        <label>Name</label>
-        <input class="w3-input w3-border" type="text" required name="Name">
-      </div>
-      <div class="w3-section">
-        <label>Email</label>
-        <input class="w3-input w3-border" type="text" required name="Email">
-      </div>
-      <div class="w3-section">
-        <label>Message</label>
-        <input class="w3-input w3-border" required name="Message">
-      </div>
-      <button type="submit" class="w3-button w3-block w3-dark-grey">Send</button>
-    </form><br>
-    <p>Hit that insta <a href="https://www.instagram.com/mwanderson/" target="_blank" class="w3-hover-text-green">Matt Anderson Instagram</a></p>
-
-  </div>
-
-<!-- End page content -->
-</div>
-
+    <div id="MasterDiv">
+        <div id="welcomeBar">
+            <div id="lblWelcome">
+                Welcome to Manderson Media!
+            </div>
+        </div>
+        <div id="banner">
+            <div id="banner-content">
+                <ul id="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://www.instagram.com/mwanderson/" target="_blank">Instagram</a></li>
+                    <li><a id="serviceTag" href="#">Services &#9660</a>
+                        <ul class="dropdown" id="dropDown">
+                            <li><a href="#">Instagram Management</a></li>
+                            <li><a href="#">Creative Management</a></li>
+                            <li><a href="#">Influencer Marketing</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="mainImg"></div>
+            <div id="aboutSection">
+                <h4>About</h4>
+            </div>
+        <div id="mainImg2"></div>
+            <div id="mainInsta">
+                <h4>Instagram</h4>
+            </div>
+        <div id="gridContainer">
+            <div id="img1" class="gridImg">
+                <img src="https://scontent-ort2-2.cdninstagram.com/vp/7e88631f644aa43d8bd49267857c91fa/5BBE6B0B/t51.2885-15/e35/29717110_2014004421961099_3184005010534957056_n.jpg" />
+            </div>
+            <div id="img2" class="gridImg">
+                <img src="https://scontent-ort2-2.cdninstagram.com/vp/551bdd0d91f170e6aa22369d26397417/5BBA057B/t51.2885-15/e35/30841447_385591035184095_6239449860215406592_n.jpg" />
+            </div>
+            <div id="img3" class="gridImg">
+                <img src="https://scontent-ort2-2.cdninstagram.com/vp/ca36c12e0ed601ed85c3c638b9976b4b/5BC50EF4/t51.2885-15/e35/29714448_203583630419966_8818164296501428224_n.jpg" />
+            </div>
+            <div id="img4" class="gridImg">
+                <img src="https://scontent-ort2-2.cdninstagram.com/vp/42bc2a94636db37967854903a42d75b5/5BA4E8CB/t51.2885-15/e35/26865811_1648261911916850_5050323898722156544_n.jpg" />
+            </div>
+            <div id="img5" class="gridImg">
+                <img src="https://scontent-ort2-2.cdninstagram.com/vp/24f3a635e8bbd13873744cefd5672372/5B85B02F/t51.2885-15/e35/22860424_132903317366927_17661635665592320_n.jpg" />
+            </div>
+            <div id="img6" class="gridImg">
+                <img src="https://scontent-ort2-2.cdninstagram.com/vp/fd623717b59b81ad8e42892cc0f81e07/5B89DB2D/t51.2885-15/e35/21224764_276227602863217_2247481670745718784_n.jpg" />
+            </div>
+        </div>
+    </div>
 </body>
 </html>
