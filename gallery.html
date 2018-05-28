@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Manderson Media - Gallery</title>
+    <link rel="stylesheet" type="text/css" href="MMStyles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.dropdown').hide();
+            $('#serviceTag').click(function () {
+                var dropdown = document.getElementById('dropDown');
+
+                if (dropdown.style.display === 'none') {
+                    dropdown.style.display = 'block';
+                    dropdown.style.position = 'absolute';
+                    dropdown.style.marginTop = '1rem';
+                    dropdown.style.left = '80px';
+                    dropdown.style.opacity = '1';
+                }
+                else {
+                    dropdown.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="MasterDiv">
+        <div id="altWelcomeBar">
+            <div id="lblWelcome"></div>
+        </div>
+        <div id="banner">
+            <div id="banner-content">
+                <ul id="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://www.instagram.com/mwanderson/" target="_blank">Instagram</a></li>
+                    <li><a href="#">Services</a>&nbsp;&nbsp;&nbsp;<a id="serviceTag" href="#">&#9660</a>
+                        <ul class="dropdown" id="dropDown">
+                            <li><a href="services.html">Instagram Management</a></li>
+                            <li><a href="services.html">Creative Management</a></li>
+                            <li><a href="services.html">Influencer Marketing</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
